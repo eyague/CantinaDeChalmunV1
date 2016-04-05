@@ -48,14 +48,16 @@
             android:layout_height="wrap_content"
             android:text="Fer foto!"
             android:id="@+id/btFoto"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="onClickFoto" />
 
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text="Entrar a la Cantina"
             android:id="@+id/btEntrar"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:onClick="onClickLoggin" />
     </LinearLayout>
 
 </LinearLayout>
