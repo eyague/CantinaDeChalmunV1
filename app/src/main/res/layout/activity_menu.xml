@@ -10,7 +10,8 @@
         android:id="@+id/btVideo"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="60dp"
+        android:onClick="onClickVideo" />
 
     <Button
         android:layout_width="wrap_content"
@@ -19,7 +20,8 @@
         android:id="@+id/btContingut"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="60dp"
+        android:onClick="onClickContingut" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,5 +30,6 @@
         android:id="@+id/btAudio"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
-        android:layout_marginBottom="60dp" />
+        android:layout_marginBottom="60dp"
+        android:onClick="onClickAudio" />
 </LinearLayout>
