@@ -1,5 +1,6 @@
 package net.infobosccoma.cantinadechalmunv1;
 
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.os.Bundle;
@@ -25,17 +26,18 @@ public class MenuActivity extends AppCompatActivity implements MediaPlayer.OnPre
         mediaPlayer.setAudioStreamType(AudioManager.STREAM_MUSIC);
         mediaPlayer.setOnPreparedListener(this);
         //mediaPlayer.isPlaying(); per si mentres esta sonant per lo del looping
-        playAudio(); //Implementar el subprograma perque s'executi la musica.
-
         try {
             mediaPlayer.setDataSource(AUDIO_PATH);
+            playAudio(); //Implementar el subprograma perque s'executi la musica.
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
     }
 
     public void onClickVideo(View v) {
-        setContentView(R.layout.activity_video);
+        Intent i = new Intent (this, VideoActivity.class);
+        startActivityForResult(i, 1);
+
     }
 
     public void onClickContingut(View v) {
@@ -43,7 +45,7 @@ public class MenuActivity extends AppCompatActivity implements MediaPlayer.OnPre
     }
 
     public void onClickAudio(View v) {
-        setContentView(R.layout.activity_audio);
+
     }
 
     private void playAudio() {
