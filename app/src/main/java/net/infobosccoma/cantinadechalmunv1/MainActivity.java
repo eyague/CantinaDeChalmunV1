@@ -86,7 +86,8 @@ public class MainActivity extends AppCompatActivity {
         TextView nom = (TextView) findViewById(R.id.editTextNom);
         TextView cognom = (TextView) findViewById(R.id.editTextCognom);
 
-        if (!(nom.getText().toString().equals("") || cognom.getText().toString().equals("") || imatge.getDrawable() == null)) {
+       if (!nom.getText().toString().toUpperCase().equals("C3PO")){
+           if (!(nom.getText().toString().equals("") || cognom.getText().toString().equals("") || imatge.getDrawable() == null)) {
             //entrar a l'aplicació
             //setContentView(R.layout.activity_menu);
             Intent i = new Intent (this, MenuActivity.class);
@@ -96,5 +97,6 @@ public class MainActivity extends AppCompatActivity {
             //torrada per dir que falta alguna cosa.
             Toast.makeText(this, R.string.torradaMain, Toast.LENGTH_LONG).show();
         }
+       }else {Toast.makeText(this, R.string.torradaMai, Toast.LENGTH_LONG).show();}
     }
 }
