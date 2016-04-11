@@ -11,7 +11,7 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="60dp"
         android:layout_marginBottom="60dp"
-        android:onClick="onClickVideo()" />
+        android:onClick="onClickVideo" />
 
     <Button
         android:layout_width="wrap_content"
