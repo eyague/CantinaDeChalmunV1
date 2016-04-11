@@ -92,8 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
         } else {
             //torrada per dir que falta alguna cosa.
-
+            Toast.makeText(this, R.string.torradaMain, Toast.LENGTH_LONG).show();
         }
-
     }
 }
