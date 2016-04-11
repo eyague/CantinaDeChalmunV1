@@ -88,7 +88,9 @@ public class MainActivity extends AppCompatActivity {
 
         if (!(nom.getText().toString().equals("") || cognom.getText().toString().equals("") || imatge.getDrawable() == null)) {
             //entrar a l'aplicació
-            setContentView(R.layout.activity_menu);
+            //setContentView(R.layout.activity_menu);
+            Intent i = new Intent (this, MenuActivity.class);
+            startActivity(i);
 
         } else {
             //torrada per dir que falta alguna cosa.

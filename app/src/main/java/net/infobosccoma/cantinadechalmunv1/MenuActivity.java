@@ -32,19 +32,23 @@ public class MenuActivity extends AppCompatActivity implements MediaPlayer.OnPre
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+        //findViewById(R.id.btVideo).setOnClickListener(this);
     }
 
     public void onClickVideo(View v) {
         Intent i = new Intent (this, VideoActivity.class);
-        startActivityForResult(i, 1);
+        startActivity(i);
 
     }
 
     public void onClickContingut(View v) {
-        setContentView(R.layout.activity_contingut);
+        Intent i = new Intent (this, ContingutActivity.class);
+        startActivity(i);
     }
 
     public void onClickAudio(View v) {
+        Intent i = new Intent (this, GravacioAudio.class);
+        startActivity(i);
 
     }
 
@@ -63,4 +67,10 @@ public class MenuActivity extends AppCompatActivity implements MediaPlayer.OnPre
         mediaPlayer.release();
         super.onDestroy();
     }
+
+//    @Override
+//    public void onClick(View v) {
+//        Intent i = new Intent (this, VideoActivity.class);
+//        startActivity(i);
+//    }
 }
