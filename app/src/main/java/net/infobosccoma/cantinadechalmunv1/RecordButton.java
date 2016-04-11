@@ -7,7 +7,7 @@ import android.widget.Button;
 /**
  * Created by aoteros on 11/04/2016.
  */
-public class RecordButton extends Button {
+class RecordButton extends Button {
     private boolean mRecording = true;
     private OnClickListener clicker = new OnClickListener() {
         public void onClick(View v) {

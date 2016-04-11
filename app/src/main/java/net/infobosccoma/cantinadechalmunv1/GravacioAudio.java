@@ -1,5 +1,6 @@
 package net.infobosccoma.cantinadechalmunv1;
 
+import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.MediaRecorder;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import java.io.File;
 import java.io.IOException;
@@ -16,7 +18,7 @@ import java.io.IOException;
 /**
  * Created by aoteros on 11/04/2016.
  */
-public class GravacioAudio extends AppCompatActivity {
+public class GravacioAudio extends Activity {
     private static final String LOG_TAG = "GravacioAudio";
     private static String mFileName = null;
 
@@ -32,6 +34,7 @@ public class GravacioAudio extends AppCompatActivity {
         super.onCreate(icicle);
 
         LinearLayout ll = new LinearLayout(this);
+        ll.setBackgroundResource(R.drawable.darthvader);
         // es crea el botó de gravació i s'afegix al layout
         mRecordButton = new RecordButton(this);
         mRecordButton.addOnClickListener(new View.OnClickListener() {
@@ -58,6 +61,7 @@ public class GravacioAudio extends AppCompatActivity {
         setContentView(ll);
 
         mFileName = getAudioFileName();
+
     }
 
 

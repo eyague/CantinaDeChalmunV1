@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="net.infobosccoma.cantinadechalmunv1.MainActivity"
-    android:background="@drawable/logo">
+    android:background="@drawable/rebelion">
 
     <ImageView
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Nom:"
         android:id="@+id/textView"
-        android:textColor="#ffffff" />
+        android:textColor="#000000" />
 
     <EditText
         android:layout_width="match_parent"
@@ -37,8 +37,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Cognom:"
-        android:id="@+id/textView2"
-        android:textColor="#ffffff" />
+        android:id="@+id/textView2" />
 
     <EditText
         android:layout_width="match_parent"

@@ -45,12 +45,12 @@ public class MenuActivity extends AppCompatActivity {
         mediaPlayer.setLooping(true);
         mediaPlayer.start();
         //mediaPlayer.isPlaying(); per si mentres esta sonant per lo del looping
-        try {
-            mediaPlayer.setDataSource(AUDIO_PATH);
-            playAudio(); //Implementar el subprograma perque s'executi la musica.
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
-        }
+//        try {
+//            mediaPlayer.setDataSource(AUDIO_PATH);
+//            playAudio(); //Implementar el subprograma perque s'executi la musica.
+//        } catch (IOException e) {
+//            System.out.println(e.getMessage());
+//        }
     }
 
     public void onClickVideo(View v) {

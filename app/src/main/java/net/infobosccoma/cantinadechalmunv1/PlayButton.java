@@ -7,7 +7,7 @@ import android.widget.Button;
 /**
  * Created by aoteros on 11/04/2016.
  */
- public class PlayButton extends Button {
+ class PlayButton extends Button {
     private boolean mPlaying = true;
     private OnClickListener clicker = new OnClickListener() {
         public void onClick(View v) {
@@ -18,7 +18,7 @@ import android.widget.Button;
 
     public PlayButton(Context ctx) {
         super(ctx);
-        setText(R.string.start_recording);
+        setText(R.string.start_playing);
         setOnClickListener(clicker);
     }
 
