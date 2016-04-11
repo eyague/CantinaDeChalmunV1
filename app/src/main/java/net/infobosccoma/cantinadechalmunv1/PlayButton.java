@@ -7,7 +7,7 @@ import android.widget.Button;
 /**
  * Created by aoteros on 11/04/2016.
  */
-class PlayButton extends Button {
+ public class PlayButton extends Button {
     private boolean mPlaying = true;
     private OnClickListener clicker = new OnClickListener() {
         public void onClick(View v) {
